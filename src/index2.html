@@ -1,0 +1,26 @@
+<html>
+
+<body>
+  <script src="../src/index.js"></script>
+  <script src="../src/features-flipping.js"></script>
+  <script src="../src/feature-flipping.js"></script>
+  <script>
+    function ifActive() {
+      console.log("feat is active");
+    }
+
+    function ifInactive() {
+      console.log("feat is desactive");
+    }
+  </script>
+  <feature-flipping active="showFeat1">
+    <if-true active="showFeat1">
+      <h1>Feat1 is activate</h1>
+    </if-true>
+    <if-false active="showFeat3">
+      Feat1 is desactivate
+    </if-false>
+  </feature-flipping>
+</body>
+
+</html>

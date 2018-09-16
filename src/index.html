@@ -1,0 +1,37 @@
+<html>
+
+<body>
+  <script src="../src/index.js"></script>
+  <script src="../src/features-flipping.js"></script>
+
+
+  <script>
+    function ifActive() {
+      console.log("feat is active");
+    }
+
+    function ifInactive() {
+      console.log("feat is desactive");
+    }
+
+    function check() {
+      return true;
+    }
+
+    debugger;
+    IF("showFeat1", ifActive, ifInactive);
+    IF("showFeat2", ifActive, ifInactive);
+    IF("showFeat3", ifActive, ifInactive);
+    IF("showFeat4", ifActive, ifInactive);
+    IF("showFeat1", ifActive);
+    IF("showFeat4", ifActive);
+    IF(check, ifActive);
+    IF(userConfig.showFeat2, ifActive, ifInactive);
+    IF(userConfig.showFeat3, ifActive, ifInactive);
+    IF(check, function() {
+      console.log("yes");
+    });
+  </script>
+</body>
+
+</html>
